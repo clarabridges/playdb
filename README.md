@@ -7,14 +7,14 @@ In-memory key value store with transactional support. Uses a queue to maintain a
 - COUNT {value}
 - END
 - BEGIN
-- ROLLBACK [**VIEW**] - optional parameter for seeing the operations being rolled back]
+- ROLLBACK [**VIEW**] - optional parameter for seeing the operations being rolled back
 - COMMIT
 - **SHOW** - additional command for introspection into the state of the database (state, transactions, transactioned operations, counts)
                                                                                                                                                                       
 #### Performance considerations
 
 All data structures selected for storage of data, ledger of transactional operations, and totals per value have an 
-average operational performance of O(1)* for insertions, deletions, and access.
+amortized operational performance of O(1)* for insertions, deletions, and access.
 
 Data structures used:
 - HashMap
