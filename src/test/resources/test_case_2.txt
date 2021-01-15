@@ -1,0 +1,8 @@
+"SET a foo",""
+"SET a foo",""
+"COUNT foo","1"
+"GET a","foo"
+"DELETE a",""
+"GET a","NULL"
+"COUNT foo","0"
+"END",""
