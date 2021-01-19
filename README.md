@@ -1,7 +1,9 @@
 # PlayDB
+##### A ~4 hour challenge to implement an in-memory key value store with operations performing at O(log(n)) or better and which supports nested transactions. 
 
-In-memory key value store with transactional support. Uses a queue to maintain a ledger of operations in the scope of any number of transactions. Available commands: 
-- SET {name} {value}                                                                                                                                                                      
+
+#### Available commands: 
+- SET {name} {value}                                                                                                                                                    
 - GET {name}
 - DELETE {name}
 - COUNT {value}
@@ -20,8 +22,6 @@ Data structures used:
 - HashMap
 - Multiset (HashMap implementation from Google's Guava library)
 - Queue   
-
-*https://www.bigocheatsheet.com/
 
 
 #### Testing
