@@ -10,9 +10,7 @@ import java.util.Map;
 
 public class Database {
 
-    //most operations O(1), w/collisions worst case O(log(n))
     private Map<String, String> data;
-    //under the covers this is also a HashMap; ops are O(log(n)) at very worst
     private Multiset<String> counts;
     //keeps a ledger of operations, modified value, and new value
     private Deque<LogEntry> opLog;
